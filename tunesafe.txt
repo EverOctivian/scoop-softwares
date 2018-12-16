@@ -1,0 +1,18 @@
+{
+    "description": "A high performance and secure VPN client for Windows that uses the WireGuard protocol",
+    "homepage": "https://tunsafe.com/",
+    "version": "1.5-rc1",
+    "license": "AGPL-1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://tunsafe.com/downloads/TunSafe-1.5-rc1-x64.zip",
+            "hash": "aa5cad739a866b07587d8c24706cc33a9705d143c9ee841e87287bb971d95c1e"
+        },
+        "32bit": {
+            "url": "https://tunsafe.com/downloads/TunSafe-1.5-rc1-x86.zip",
+            "hash": "24c8f3ac2f439b15e460122e4d656aa758908d46f5a267e46809915be03c1f28"
+        }
+    },
+    "extract_dir": "tunesafe",
+    "depends":"tunesafe-tap"
+}
