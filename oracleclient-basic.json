@@ -1,0 +1,39 @@
+{
+    "description": "Free, light-weight, and easily installed Oracle Database tools, libraries and SDKs for building and connecting applications to an Oracle Database instance.",
+    "homepage": "https://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html",
+    "version": "12.2.0.1.0",
+    "license": "https://www.oracle.com/technetwork/licenses/distribution-license-152002.html",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.oracle.com/otn/nt/instantclient/122010/instantclient-basic-windows.x64-12.2.0.1.0.zip?AuthParam=1544983836_8236d4d704c01bcd66b1448ba5d725be",
+            "hash": "db0ced2fd5e9a7eee39a284ee620ef4b90ff7a576ca495c3ba412e384d7a3aec"
+        },
+        "32bit": {
+            "url": "https://download.oracle.com/otn/nt/instantclient/122010/instantclient-basic-nt-12.2.0.1.0.zip?AuthParam=1544980730_84ff8fee1592acc3383cf4552df83689",
+            "hash": "dbd0f0e740268e5230557084e6d98049ed018d60dfc111cade40936ebddd1f77"
+        }
+    },
+    "cookie": {
+        "oraclelicense": "accept-securebackup-cookie"
+    },
+    "extract_dir": "instantclient_12_2",
+    "pre_install": [
+        "   #Create placeholder files",
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create placeholder for shadowsocksr-csharp: $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'sqlnet.ora'",
+        "CreateFile 'tnsnames.ora'"
+    ],
+    "persist": [
+        "sqlnet.ora",
+        "tnsnames.ora"
+    ],
+    "env_set": {
+        "NLS_LANG": "AMERICAN_AMERICA.ZHS16GBK",
+        "TNS_ADMIN": "$dir"
+    }
+}
