@@ -13,6 +13,5 @@
             "hash": "24c8f3ac2f439b15e460122e4d656aa758908d46f5a267e46809915be03c1f28"
         }
     },
-    "extract_dir": "tunesafe",
-    "depends":"tunesafe-tap"
+    "extract_dir": "tunesafe"
 }
