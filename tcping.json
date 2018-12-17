@@ -5,11 +5,11 @@
     "license": "AGPL-1.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/EverOctivian/tcping/releases/download/1.0/tcping-x64.zip",
+            "url": "https://github.com/EverOctivian/scoop-softwares-bin/releases/download/1.0/tcping-x64.zip",
             "hash": "17af7c7e69af406bc373ee283a7e3023d8d0871aaeaf715dd83b63c350bc963a"
         },
         "32bit": {
-            "url": "https://github.com/EverOctivian/tcping/releases/download/1.0/tcping-x86.zip",
+            "url": "https://github.com/EverOctivian/scoop-softwares-bin/releases/download/1.0/tcping-x86.zip",
             "hash": "851fef2849e5840949c40d3654236f886f85a4c72e2e6d4fe3214ff25f589c5b"
         }
     },
