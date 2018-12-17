@@ -1,0 +1,46 @@
+{
+    "description": "Install Windows from USB with WinSetupFromUSB, multiboot and a lot more",
+    "homepage": "http://www.winsetupfromusb.com/",
+    "version": "1.8",
+    "url": "http://downloads.winsetupfromusb.com/WinSetupFromUSB-1-8.exe#/dl.7z",
+    "hash": "b2c45cb4601d9f096edecb7f5d0cac0933c122d299131c3f003e3e6a1886c735",
+    "extract_dir": "WinSetupFromUSB-1-8",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "WinSetupFromUSB_1-8_x64.exe",
+                    "winsetup"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "WinSetupFromUSB_1-8_x64.exe",
+                    "WinsetupFromUSB"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "WinSetupFromUSB_1-8.exe",
+                    "winsetup"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "WinSetupFromUSB_1-8.exe",
+                    "WinsetupFromUSB"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "http://www.winsetupfromusb.com/downloads/",
+        "re": "(?:WinSetupFromUSB\\s+)([\\d.]+)(?:-)"
+    },
+    "autoupdate": {
+        "url": "http://downloads.winsetupfromusb.com/WinSetupFromUSB-$dashVersion.exe#/dl.7z",
+        "extract_dir": "WinSetupFromUSB-$dashVersion"
+    }
+}
