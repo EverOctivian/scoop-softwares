@@ -1,0 +1,42 @@
+{
+    "description": "Hashing utility for verifying integrity of files using a wide range of supported algorithms: CRC32, MD2, MD4, MD5, SHA1, SHA256, SHA512, RipeMD128, RipeMD160, ED2K.",
+    "homepage": "https://www.den4b.com/products/hasher",
+    "version": "3.4",
+    "license": "https://www.den4b.com/license",
+    "url": "https://www.den4b.com/download/hasher/portable?key=d97a7cf8021f8c1cbf354586d84cbc1a4523e03a2b0414fd#/dl.zip",
+    "hash": "2d44210acd114daec265d495d45a6bd7b119fe777fbc276e432d981fdb0f7885",
+    "extract_dir": ".",
+    "bin": [
+        [
+            "Hasher.exe",
+            "hasher"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Hasher.exe",
+            "Hasher"
+        ]
+    ],
+    "pre_install": [
+        "   #Create placeholder files",
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if(!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host \"Create placeholder for shadowsocksr-csharp: $file\"",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'Settings.ini'"
+    ],
+    "persist": [
+        "Settings.ini"
+    ],
+    "checkver": {
+        "url": "https://www.den4b.com/downloads/hasher",
+        "re": "(?:Hasher\\s+)((?<version>[\\d.]+)(?:\\s+Portable))"
+    },
+    "autoupdate": {
+        "url": "https://www.den4b.com/download/hasher/portable?key=d97a7cf8021f8c1cbf354586d84cbc1a4523e03a2b0414fd#/dl.zip",
+        "extract_dir": "."
+    }
+}

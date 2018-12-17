@@ -1,0 +1,21 @@
+{
+    "description": "Local network instant message client.",
+    "homepage": "http://www.feiq18.com/index.php",
+    "version": "3.0.0.2",
+    "license": "http://www.feiq18.com/config_nav.php?id=4",
+    "url": "https://github.com/EverOctivian/scoop-softwares-bin/releases/download/1.0/FeiQ-win-3.0.0.2.zip",
+    "hash": "0611d7963d25e47ee87d8859c225d1d9b087b2f5fe27152906f04e94fe9e5c72",
+    "extract_dir": ".",
+    "bin": [
+        [
+            "FeiQ.exe",
+            "feiq"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "FeiQ.exe",
+            "FeiQ"
+        ]
+    ]
+}
