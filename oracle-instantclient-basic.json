@@ -5,7 +5,7 @@
     "license": "https://www.oracle.com/technetwork/licenses/distribution-license-152002.html",
     "architecture": {
         "64bit": {
-            "url": "https://download.oracle.com/otn/nt/instantclient/122010/instantclient-basic-windows.x64-12.2.0.1.0.zip?AuthParam=1544983836_8236d4d704c01bcd66b1448ba5d725be",
+            "url": "https://download.oracle.com/otn/nt/instantclient/122010/instantclient-basic-windows.x64-12.2.0.1.0.zip?AuthParam=1545104317_1e0f9daa7ea0ab84909e04aac801cfc3",
             "hash": "db0ced2fd5e9a7eee39a284ee620ef4b90ff7a576ca495c3ba412e384d7a3aec"
         },
         "32bit": {

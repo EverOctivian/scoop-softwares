@@ -1,0 +1,14 @@
+{
+    "description": "Wake On LAN / Shutdown software for Windows. A powerful WOL, ping, shutdown, GUI application.",
+    "homepage": "https://wol.aquilatech.com/",
+    "version": "2.12.2",
+    "license": "https://github.com/basildane/WakeOnLAN/blob/master/LICENSE",
+    "url": "https://github.com/basildane/WakeOnLAN/releases/download/2.12.2/WakeOnLAN_2.12.2.0.exe",
+    "hash": "3a1c68c6850f4e7738ac43f51c6a2a6370bb54616a905509e17206b50bb0e3c7",
+    "shortcuts": [
+        [
+            "WakeOnLAN.exe",
+            "WakeOnLAN"
+        ]
+    ]
+}

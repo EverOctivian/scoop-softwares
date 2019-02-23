@@ -1,0 +1,24 @@
+{
+    "description": "DNS Jumper is a tool which helps you improve browsing speed and/or improve your security by replacing the DNS provided by your internet service provider",
+    "homepage": "https://www.sordum.org/7952/dns-jumper-v2-1/",
+    "version": "2.1",
+    "license": "https://www.sordum.org/7952/dns-jumper-v2-1/",
+    "url": "https://www.sordum.org/files/dns-jumper/DnsJumper.zip",
+    "hash": "3feb937ca439cd21f04accd8d96e700a639ee57b73b985c61ad14b5ae5e10b79",
+    "extract_dir": "DnsJumper",
+    "bin": [
+        [
+            "DnsJumper.exe",
+            "dnsjumper"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "DnsJumper.exe",
+            "DnsJumper"
+        ]
+    ],
+    "persist": [
+        "DnsJumper.ini"
+    ]
+}
